@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitor Hugo Transportes | Transporte Rodoviário de Cargas em Seropédica - RJ</title>
+    <meta name="description" content="Transporte rodoviário municipal de cargas gerais em Seropédica - RJ. Agilidade, pontualidade e segurança para o seu negócio. CNPJ: 60.700.284/0001-50.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração personalizada do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#162844',
+                            900: '#0F1C30',
+                            950: '#091220',
+                        },
+                        amber: {
+                            500: '#F59E0B',
+                            600: '#D97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-amber-500 selection:text-white">
+
+    <!-- ==================== CABEÇALHO / NAVBAR ==================== -->
+    <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 shadow-lg transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo / Nome Comercial -->
+                <a href="#inicio" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-navy-950 shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-truck-fast text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="block text-white font-extrabold text-lg sm:text-xl tracking-tight leading-none">
+                            VITOR HUGO <span class="text-amber-500">TRANSPORTES</span>
+                        </span>
+                        <span class="block text-slate-400 text-[11px] font-medium tracking-wider uppercase mt-1">
+                            Logística & Cargas • Seropédica - RJ
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#quem-somos" class="text-slate-300 hover:text-amber-400 font-medium text-sm transition-colors">Quem Somos</a>
+                    <a href="#servicos" class="text-slate-300 hover:text-amber-400 font-medium text-sm transition-colors">Serviços</a>
+                    <a href="#privacidade" class="text-slate-300 hover:text-amber-400 font-medium text-sm transition-colors">Política de Privacidade</a>
+                    <a href="#contato" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold text-sm px-5 py-2.5 rounded-xl shadow-md hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-calculator"></i>
+                        Solicitar Orçamento
+                    </a>
+                </nav>
+
+                <!-- Botão Menu Mobile -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" aria-label="Abrir menu" class="text-slate-300 hover:text-white p-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-950 border-t border-slate-800 px-4 pt-3 pb-6 space-y-2 shadow-2xl">
+            <a href="#quem-somos" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-navy-800 hover:text-amber-400 transition">
+                <i class="fa-solid fa-building w-6 text-amber-500"></i> Quem Somos
+            </a>
+            <a href="#servicos" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-navy-800 hover:text-amber-400 transition">
+                <i class="fa-solid fa-boxes-stacked w-6 text-amber-500"></i> Serviços
+            </a>
+            <a href="#privacidade" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-navy-800 hover:text-amber-400 transition">
+                <i class="fa-solid fa-shield-halved w-6 text-amber-500"></i> Política de Privacidade
+            </a>
+            <div class="pt-2">
+                <a href="#contato" class="mobile-link flex items-center justify-center gap-2 w-full bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold px-5 py-3.5 rounded-xl shadow-md transition">
+                    <i class="fa-solid fa-paper-plane"></i> Solicitar Orçamento
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="inicio" class="relative bg-navy-900 overflow-hidden">
+        <!-- Padrão geométrico decorativo de fundo -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F59E0B" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+            </svg>
+        </div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Texto Principal -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800 border border-slate-700 text-amber-400 text-xs sm:text-sm font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Empresa Ativa • Atendimento Especializado em Seropédica - RJ
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        Transporte Municipal de Cargas com <span class="text-amber-500">Agilidade e Pontualidade</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Soluções eficientes em transporte rodoviário municipal de cargas gerais para comércios, indústrias e empreendedores locais. Compromisso total com o prazo e a integridade da sua mercadoria.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contato" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold px-7 py-4 rounded-xl shadow-lg shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 text-base">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                            Cotar Frete Agora
+                        </a>
+                        <a href="#servicos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-navy-800 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-7 py-4 rounded-xl transition-all text-base">
+                            <i class="fa-solid fa-truck-ramp-box text-amber-500"></i>
+                            Conhecer Serviços
+                        </a>
+                    </div>
+
+                    <!-- Selos de Confiança -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-amber-500 font-extrabold text-xl sm:text-2xl">100%</p>
+                            <p class="text-slate-400 text-xs sm:text-sm">Foco Municipal</p>
+                        </div>
+                        <div>
+                            <p class="text-amber-500 font-extrabold text-xl sm:text-2xl">Ativa</p>
+                            <p class="text-slate-400 text-xs sm:text-sm">Situação Cadastral</p>
+                        </div>
+                        <div>
+                            <p class="text-amber-500 font-extrabold text-xl sm:text-2xl">Ágil</p>
+                            <p class="text-slate-400 text-xs sm:text-sm">Coleta e Entrega</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Ilustrativo / Destaque Logístico -->
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-800/90 backdrop-blur-sm border border-slate-700/80 rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+                        <div class="flex items-center justify-between border-b border-slate-700 pb-5 mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-amber-500/15 text-amber-500 flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-route"></i>
+                                </div>
+                                <div>
+                                    <h2 class="text-white font-bold text-lg">Operação Local</h2>
+                                    <p class="text-slate-400 text-xs">Seropédica • Parque Jacimar e Região</p>
+                                </div>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 text-xs font-bold border border-emerald-500/30">
+                                Regularizada
+                            </span>
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-slate-300">
+                            <li class="flex items-start gap-3 bg-navy-900/60 p-3.5 rounded-xl border border-slate-800">
+                                <i class="fa-solid fa-circle-check text-amber-500 mt-0.5 text-base"></i>
+                                <div>
+                                    <strong class="text-white block">Transporte Municipal de Cargas Gerais</strong>
+                                    <span>Movimentação segura de mercadorias comerciais, insumos e suprimentos.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 bg-navy-900/60 p-3.5 rounded-xl border border-slate-800">
+                                <i class="fa-solid fa-circle-check text-amber-500 mt-0.5 text-base"></i>
+                                <div>
+                                    <strong class="text-white block">Atendimento Sob Medida</strong>
+                                    <span>Rotas planejadas para otimizar o tempo de entrega dentro do município.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 bg-navy-900/60 p-3.5 rounded-xl border border-slate-800">
+                                <i class="fa-solid fa-circle-info text-slate-400 mt-0.5 text-base"></i>
+                                <div>
+                                    <strong class="text-slate-200 block">Escopo Especializado</strong>
+                                    <span class="text-slate-400 text-xs">Atuação exclusiva para cargas secas e gerais (exceto produtos perigosos e mudanças).</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== QUEM SOMOS ==================== -->
+    <section id="quem-somos" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Coluna Visual / Dados Institucionais -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-800">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500 text-navy-950 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-building-shield text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-white">Transparência Empresarial</h3>
+                                <p class="text-xs text-slate-400">Registro Oficial e Conformidade</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="p-3.5 rounded-xl bg-slate-800/70 border border-slate-700/70">
+                                <span class="text-slate-400 text-xs uppercase tracking-wider block">Razão Social</span>
+                                <strong class="text-white font-semibold">60.700.284 VITOR HUGO CALDEIRA RODRIGUES - ME</strong>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="p-3.5 rounded-xl bg-slate-800/70 border border-slate-700/70">
+                                    <span class="text-slate-400 text-xs uppercase tracking-wider block">CNPJ</span>
+                                    <strong class="text-amber-400 font-mono">60.700.284/0001-50</strong>
+                                </div>
+                                <div class="p-3.5 rounded-xl bg-slate-800/70 border border-slate-700/70">
+                                    <span class="text-slate-400 text-xs uppercase tracking-wider block">Fundação</span>
+                                    <strong class="text-white">06/05/2025</strong>
+                                </div>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-slate-800/70 border border-slate-700/70">
+                                <span class="text-slate-400 text-xs uppercase tracking-wider block">Atividade Principal (CNAE)</span>
+                                <strong class="text-slate-200 font-medium">Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal.</strong>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-slate-800/70 border border-slate-700/70 flex items-center justify-between">
+                                <div>
+                                    <span class="text-slate-400 text-xs uppercase tracking-wider block">Sede Operacional</span>
+                                    <strong class="text-white">Parque Jacimar, Seropédica - RJ</strong>
+                                </div>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span> ATIVA
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Texto Institucional -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-amber-600 font-bold text-sm uppercase tracking-wider">
+                        <span class="w-8 h-0.5 bg-amber-500"></span>
+                        Quem Somos
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+                        Compromisso com a logística municipal e o crescimento de Seropédica
+                    </h2>
+
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        Fundada em <strong>06 de maio de 2025</strong>, a <strong>Vitor Hugo Transportes (60.700.284 VITOR HUGO CALDEIRA RODRIGUES - ME)</strong> nasceu com o propósito de oferecer soluções ágeis, seguras e confiáveis no transporte rodoviário municipal de cargas em <strong>Seropédica - RJ</strong>.
+                    </p>
+
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Com sede no bairro Parque Jacimar, conhecemos profundamente a malha viária e as necessidades logísticas da nossa região. Atuamos como um parceiro estratégico para comércios locais, distribuidoras, prestadores de serviço e pequenas indústrias que precisam movimentar suas mercadorias com pontualidade e cuidado.
+                    </p>
+
+                    <!-- Pilares -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-amber-500 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <h4 class="font-bold text-navy-900 text-sm">Pontualidade</h4>
+                            <p class="text-slate-600 text-xs mt-1">Respeito rigoroso aos horários acordados de coleta e entrega.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-amber-500 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-shield-check fa-solid fa-lock"></i>
+                            </div>
+                            <h4 class="font-bold text-navy-900 text-sm">Segurança</h4>
+                            <p class="text-slate-600 text-xs mt-1">Zelo total no manuseio, acomodação e transporte da carga.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-amber-500 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h4 class="font-bold text-navy-900 text-sm">Atendimento Direto</h4>
+                            <p class="text-slate-600 text-xs mt-1">Comunicação transparente e personalizada para cada cliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVIÇOS ==================== -->
+    <section id="servicos" class="py-16 sm:py-24 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Cabeçalho da Seção -->
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-4">
+                <div class="inline-flex items-center gap-2 text-amber-600 font-bold text-sm uppercase tracking-wider">
+                    <span class="w-6 h-0.5 bg-amber-500"></span>
+                    Nossas Soluções
+                    <span class="w-6 h-0.5 bg-amber-500"></span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+                    Serviços de Transporte Municipal
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Operações logísticas planejadas para atender com eficiência o fluxo de mercadorias dentro do município de Seropédica - RJ.
+                </p>
+            </div>
+
+            <!-- Grid de Cards de Serviços -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200/90 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-navy-900 text-amber-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-navy-950 transition-colors">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy-900 mb-3">
+                            Transporte Municipal de Cargas Gerais
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                            Coleta e entrega ágil de mercadorias secas, caixas, paletes, materiais de construção leves e suprimentos diversos em todos os bairros de Seropédica.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 font-medium border-t border-slate-100 pt-4">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Coleta agendada ou rápida
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Conferência no embarque e desembarque
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Otimização de rotas municipais
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4">
+                        <a href="#contato" onclick="selecionarServico('Transporte Municipal de Cargas Gerais')" class="inline-flex items-center gap-2 text-sm font-bold text-navy-900 hover:text-amber-600 transition-colors">
+                            Solicitar cotação <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200/90 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-navy-900 text-amber-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-navy-950 transition-colors">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy-900 mb-3">
+                            Logística e Distribuição Urbana
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                            Abastecimento contínuo e programado para comércios locais, mercados, depósitos, lojas e empreendedores que precisam manter seu estoque sempre em dia.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 font-medium border-t border-slate-100 pt-4">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Abastecimento de pontos comerciais
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Entregas fracionadas em múltiplos pontos
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Parceria recorrente para empresas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4">
+                        <a href="#contato" onclick="selecionarServico('Logística e Distribuição Urbana')" class="inline-flex items-center gap-2 text-sm font-bold text-navy-900 hover:text-amber-600 transition-colors">
+                            Solicitar cotação <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200/90 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-navy-900 text-amber-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-navy-950 transition-colors">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy-900 mb-3">
+                            Frete Dedicado e Sob Demanda
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                            Disponibilização de transporte exclusivo ponto a ponto para cargas fechadas ou urgentes, garantindo máxima agilidade sem paradas intermediárias.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 font-medium border-t border-slate-100 pt-4">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Transporte direto origem-destino
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Flexibilidade de horários
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-amber-500"></i> Ideal para demandas emergenciais
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4">
+                        <a href="#contato" onclick="selecionarServico('Frete Dedicado e Sob Demanda')" class="inline-flex items-center gap-2 text-sm font-bold text-navy-900 hover:text-amber-600 transition-colors">
+                            Solicitar cotação <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nota Informativa Profissional sobre Escopo (CNAE) -->
+            <div class="mt-12 bg-navy-900 rounded-2xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-lg">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-1 md:mt-0">
+                        <i class="fa-solid fa-circle-exclamation text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-base sm:text-lg text-white">Diretrizes de Operação e Segurança</h4>
+                        <p class="text-slate-300 text-sm mt-1 leading-relaxed">
+                            Em total conformidade com nossa atividade econômica registrada, realizamos exclusivamente o <strong>transporte rodoviário municipal de cargas gerais e secas</strong>. <strong>Não realizamos</strong> o transporte de produtos perigosos/químicos nem serviços de mudanças residenciais ou comerciais.
+                        </p>
+                    </div>
+                </div>
+                <a href="#contato" class="shrink-0 bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold text-sm px-6 py-3.5 rounded-xl transition w-full md:w-auto text-center">
+                    Consultar Disponibilidade
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTATO / ORÇAMENTO ==================== -->
+    <section id="contato" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Informações de Contato e Localização -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-amber-600 font-bold text-sm uppercase tracking-wider">
+                        <span class="w-8 h-0.5 bg-amber-500"></span>
+                        Fale Conosco
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+                        Solicite sua Cotação de Frete Municipal
+                    </h2>
+
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Preencha os dados ao lado informando o tipo de carga, origem e destino dentro de Seropédica. Nossa equipe retornará rapidamente com uma proposta comercial sob medida.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-xl bg-navy-900 text-amber-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-900 text-sm">Endereço da Base</h4>
+                                <p class="text-slate-600 text-sm mt-0.5">
+                                    R R Sergio Bento Silva, 4, Lt 11<br>
+                                    Parque Jacimar, Seropédica - RJ<br>
+                                    CEP: 23897-660 • Brasil
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-xl bg-navy-900 text-amber-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-900 text-sm">Horário de Atendimento</h4>
+                                <p class="text-slate-600 text-sm mt-0.5">
+                                    Segunda a Sexta: 08h00 às 18h00<br>
+                                    Sábado: 08h00 às 12h00 (Sob agendamento)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Orçamento -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-50 rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+                        <form id="quote-form" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="nome" class="block text-sm font-semibold text-navy-900 mb-1.5">Nome Completo ou Empresa *</label>
+                                    <input type="text" id="nome" name="nome" required placeholder="Ex: João Silva / Mercado Central"
+                                        class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition">
+                                </div>
+                                <div>
+                                    <label for="telefone" class="block text-sm font-semibold text-navy-900 mb-1.5">Telefone / WhatsApp *</label>
+                                    <input type="tel" id="telefone" name="telefone" required placeholder="(21) 99999-9999"
+                                        class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-navy-900 mb-1.5">E-mail Corporativo ou Pessoal *</label>
+                                    <input type="email" id="email" name="email" required placeholder="contato@suaempresa.com.br"
+                                        class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition">
+                                </div>
+                                <div>
+                                    <label for="servico" class="block text-sm font-semibold text-navy-900 mb-1.5">Tipo de Serviço *</label>
+                                    <select id="servico" name="servico" required
+                                        class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition">
+                                        <option value="Transporte Municipal de Cargas Gerais">Transporte Municipal de Cargas Gerais</option>
+                                        <option value="Logística e Distribuição Urbana">Logística e Distribuição Urbana</option>
+                                        <option value="Frete Dedicado e Sob Demanda">Frete Dedicado e Sob Demanda</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="detalhes" class="block text-sm font-semibold text-navy-900 mb-1.5">Detalhes da Carga e Trajeto (Bairros em Seropédica) *</label>
+                                <textarea id="detalhes" name="detalhes" rows="4" required placeholder="Descreva o tipo de mercadoria (carga seca/geral), peso estimado, bairro de coleta e bairro de entrega..."
+                                    class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition"></textarea>
+                            </div>
+
+                            <!-- Consentimento LGPD -->
+                            <div class="flex items-start gap-3">
+                                <input type="checkbox" id="lgpd-consent" required class="mt-1 w-4 h-4 text-amber-500 border-slate-300 rounded focus:ring-amber-500">
+                                <label for="lgpd-consent" class="text-xs text-slate-600 leading-relaxed">
+                                    Concordo com o tratamento dos meus dados pessoais para fins de atendimento comercial e elaboração de orçamento, conforme descrito na <a href="#privacidade" class="text-navy-900 font-bold underline hover:text-amber-600">Política de Privacidade</a>.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-base">
+                                <i class="fa-solid fa-paper-plane text-amber-500"></i>
+                                Enviar Solicitação de Orçamento
+                            </button>
+                        </form>
+
+                        <!-- Mensagem de Feedback (Substitui alert()) -->
+                        <div id="form-feedback" class="hidden mt-6 p-5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xl mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-base">Solicitação Enviada com Sucesso!</h4>
+                                    <p class="text-sm text-emerald-800 mt-1" id="feedback-text">
+                                        Recebemos seus dados. Nossa equipe analisará sua demanda de transporte e entrará em contato em breve.
+                                    </p>
+                                    <button type="button" onclick="resetarFormulario()" class="mt-3 text-xs font-bold uppercase tracking-wider text-emerald-700 hover:text-emerald-950 underline">
+                                        Enviar nova cotação
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== POLÍTICA DE PRIVACIDADE (LGPD) ==================== -->
+    <section id="privacidade" class="py-16 sm:py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-6 sm:p-10 shadow-sm border border-slate-200">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-6 mb-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 text-amber-500 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900">Política de Privacidade</h2>
+                            <p class="text-xs sm:text-sm text-slate-500">Conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD)</p>
+                        </div>
+                    </div>
+                    <button type="button" id="toggle-privacy-btn" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-navy-900 font-semibold text-xs sm:text-sm transition">
+                        <span id="toggle-privacy-text">Recolher Texto</span>
+                        <i class="fa-solid fa-chevron-up" id="toggle-privacy-icon"></i>
+                    </button>
+                </div>
+
+                <!-- Conteúdo da Política de Privacidade -->
+                <div id="privacy-content" class="space-y-5 text-sm text-slate-600 leading-relaxed">
+                    <p>
+                        A <strong>60.700.284 VITOR HUGO CALDEIRA RODRIGUES - ME</strong>, pessoa jurídica de direito privado inscrita no CNPJ sob o nº <strong>60.700.284/0001-50</strong>, com sede na R R Sergio Bento Silva, 4, Lt 11, Parque Jacimar, Seropédica - RJ, CEP 23897-660, reafirma seu compromisso com a transparência, a privacidade e a segurança dos dados pessoais de seus clientes, parceiros e visitantes deste site.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <h3 class="font-bold text-navy-900 text-base mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-database text-amber-500"></i> 1. Coleta de Dados Pessoais
+                            </h3>
+                            <p class="text-xs sm:text-sm">
+                                Coletamos apenas os dados estritamente necessários fornecidos voluntariamente por você no formulário de solicitação de orçamento, tais como: <strong>nome completo ou razão social, telefone/WhatsApp, endereço de e-mail e informações logísticas da carga</strong> (origem, destino e características da mercadoria).
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <h3 class="font-bold text-navy-900 text-base mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye text-amber-500"></i> 2. Finalidade do Tratamento
+                            </h3>
+                            <p class="text-xs sm:text-sm">
+                                Os dados coletados são utilizados exclusivamente para: responder às solicitações de cotação de frete, prestar atendimento comercial, formalizar contratos de prestação de serviços de transporte municipal e cumprir obrigações legais e fiscais aplicáveis.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <h3 class="font-bold text-navy-900 text-base mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-lock text-amber-500"></i> 3. Armazenamento e Segurança
+                            </h3>
+                            <p class="text-xs sm:text-sm">
+                                Adotamos medidas técnicas e administrativas aptas a proteger os dados pessoais contra acessos não autorizados, perda, alteração ou divulgação indevida. Não comercializamos, alugamos ou compartilhamos seus dados com terceiros para fins de marketing.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <h3 class="font-bold text-navy-900 text-base mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-user-shield text-amber-500"></i> 4. Direitos do Titular (LGPD)
+                            </h3>
+                            <p class="text-xs sm:text-sm">
+                                Em conformidade com o art. 18 da LGPD, você pode solicitar a qualquer momento a confirmação da existência de tratamento, o acesso, a correção de dados incompletos ou a eliminação de seus dados pessoais de nossa base de atendimento através dos nossos canais oficiais.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-slate-500 pt-2 border-t border-slate-100">
+                        Última atualização: Novembro de 2026 • Controlador: 60.700.284 VITOR HUGO CALDEIRA RODRIGUES - ME.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RODAPÉ (FOOTER) ==================== -->
+    <footer class="bg-navy-950 text-slate-300 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-slate-800/80">
+                <!-- Coluna 1: Identidade da Empresa -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-navy-950">
+                            <i class="fa-solid fa-truck-fast text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="block text-white font-extrabold text-lg tracking-tight leading-none">
+                                VITOR HUGO <span class="text-amber-500">TRANSPORTES</span>
+                            </span>
+                            <span class="block text-slate-400 text-xs mt-1">Transporte Rodoviário Municipal</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Soluções em transporte rodoviário municipal de cargas gerais com eficiência, segurança e compromisso com o desenvolvimento local de Seropédica - RJ.
+                    </p>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-navy-900 border border-slate-800 text-xs text-emerald-400 font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        Situação Cadastral: ATIVA (Desde 06/05/2025)
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Links Rápidos -->
+                <div class="md:col-span-3 space-y-4">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Navegação Rápida</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li>
+                            <a href="#inicio" class="text-slate-400 hover:text-amber-400 transition flex items-center gap-2">
+                                <i class="fa-solid fa-angle-right text-amber-500 text-xs"></i> Início
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#quem-somos" class="text-slate-400 hover:text-amber-400 transition flex items-center gap-2">
+                                <i class="fa-solid fa-angle-right text-amber-500 text-xs"></i> Quem Somos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#servicos" class="text-slate-400 hover:text-amber-400 transition flex items-center gap-2">
+                                <i class="fa-solid fa-angle-right text-amber-500 text-xs"></i> Serviços
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#privacidade" class="text-slate-400 hover:text-amber-400 transition flex items-center gap-2">
+                                <i class="fa-solid fa-angle-right text-amber-500 text-xs"></i> Política de Privacidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contato" class="text-slate-400 hover:text-amber-400 transition flex items-center gap-2">
+                                <i class="fa-solid fa-angle-right text-amber-500 text-xs"></i> Solicitar Orçamento
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Dados Cadastrais Obrigatórios -->
+                <div class="md:col-span-4 space-y-4">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Dados Cadastrais & Endereço</h4>
+                    <div class="bg-navy-900/90 border border-slate-800 rounded-xl p-4 space-y-3 text-sm">
+                        <div>
+                            <span class="text-slate-500 text-xs block">Razão Social:</span>
+                            <strong class="text-white font-semibold">60.700.284 VITOR HUGO CALDEIRA RODRIGUES - ME</strong>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 text-xs block">CNPJ:</span>
+                            <div class="flex items-center gap-2">
+                                <strong class="text-amber-400 font-mono">60.700.284/0001-50</strong>
+                                <button type="button" onclick="copiarCNPJ()" title="Copiar CNPJ" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-2 py-0.5 rounded transition">
+                                    <i class="fa-regular fa-copy"></i> <span id="copy-cnpj-label">Copiar</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 text-xs block">Endereço Completo:</span>
+                            <address class="not-italic text-slate-300 leading-snug">
+                                R R SERGIO BENTO SILVA, 4, LT 11<br>
+                                PARQUE JACIMAR, SEROPÉDICA - RJ<br>
+                                CEP: 23897-660, Brasil
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
+                <p>
+                    &copy; 2025–2026 <strong class="text-slate-300">60.700.284 VITOR HUGO CALDEIRA RODRIGUES - ME</strong>. Todos os direitos reservados.
+                </p>
+                <p>
+                    Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS INTERATIVOS ==================== -->
+    <script>
+        // 1. Controle do Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Fecha o menu mobile ao clicar em qualquer link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // 2. Pré-seleção de serviço ao clicar no card
+        function selecionarServico(nomeServico) {
+            const selectServico = document.getElementById('servico');
+            if (selectServico) {
+                selectServico.value = nomeServico;
+            }
+        }
+
+        // 3. Envio do Formulário de Orçamento com feedback visual
+        const quoteForm = document.getElementById('quote-form');
+        const formFeedback = document.getElementById('form-feedback');
+        const feedbackText = document.getElementById('feedback-text');
+
+        quoteForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const nome = document.getElementById('nome').value.trim();
+            const servico = document.getElementById('servico').value;
+            
+            feedbackText.innerHTML = `Olá, <strong>${nome}</strong>! Sua solicitação para <strong>${servico}</strong> foi registrada com sucesso. Nossa equipe em Seropédica analisará os dados e responderá em breve.`;
+            
+            quoteForm.classList.add('hidden');
+            formFeedback.classList.remove('hidden');
+        });
+
+        function resetarFormulario() {
+            quoteForm.reset();
+            formFeedback.classList.add('hidden');
+            quoteForm.classList.remove('hidden');
+        }
+
+        // 4. Expandir / Recolher Política de Privacidade
+        const togglePrivacyBtn = document.getElementById('toggle-privacy-btn');
+        const privacyContent = document.getElementById('privacy-content');
+        const togglePrivacyText = document.getElementById('toggle-privacy-text');
+        const togglePrivacyIcon = document.getElementById('toggle-privacy-icon');
+
+        togglePrivacyBtn.addEventListener('click', () => {
+            const isHidden = privacyContent.classList.contains('hidden');
+            if (isHidden) {
+                privacyContent.classList.remove('hidden');
+                togglePrivacyText.textContent = 'Recolher Texto';
+                togglePrivacyIcon.classList.remove('fa-chevron-down');
+                togglePrivacyIcon.classList.add('fa-chevron-up');
+            } else {
+                privacyContent.classList.add('hidden');
+                togglePrivacyText.textContent = 'Expandir Texto';
+                togglePrivacyIcon.classList.remove('fa-chevron-up');
+                togglePrivacyIcon.classList.add('fa-chevron-down');
+            }
+        });
+
+        // 5. Copiar CNPJ no rodapé (usando document.execCommand para compatibilidade)
+        function copiarCNPJ() {
+            const cnpjTexto = '60.700.284/0001-50';
+            const tempInput = document.createElement('input');
+            tempInput.value = cnpjTexto;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const label = document.getElementById('copy-cnpj-label');
+            label.textContent = 'Copiado!';
+            setTimeout(() => {
+                label.textContent = 'Copiar';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
